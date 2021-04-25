@@ -3,7 +3,6 @@
 // в котором будут только те элементы оригинального массива, которые больше чем значение параметра value.
 // Выполни рефакторинг функции так, чтобы вместо цикла for она использовала метод forEach.
 
-
 function filterArray(numbers, value) {
   const filteredNumbers = [];
   //   for (let i = 0; i < numbers.length; i += 1) {
@@ -11,12 +10,11 @@ function filterArray(numbers, value) {
   //       filteredNumbers.push(numbers[i]);
   //     }
   //   }
-
-  numbers.forEach(callback =>{
-    if(callback > value){
-    filteredNumbers.push(callback);
+  numbers.forEach((callback) => {
+    if (callback > value) {
+      filteredNumbers.push(callback);
     }
- });
+  });
   console.log(filteredNumbers);
   return filteredNumbers;
 }
